@@ -1,0 +1,724 @@
+html{
+    height: 100%;
+}
+
+body{
+    /* background-color: #EBEBEB; */
+    font-family: 'Roboto', sans-serif;
+    background-color:#fcfeff;
+    /* width: 100%; */
+}
+
+.header-container{
+    /* background-color: rgb(60, 60, 60); */
+    position: fixed;
+    width: 100%;
+    background-color:#fcfeff;
+    min-height: 100px;
+}
+
+header{
+    /* background-color: pink; */
+    max-width: 1024px;
+    min-height: 50px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fcfeff;
+}
+
+.logo{
+    max-width: 239px;
+    max-height: 107px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbutton {
+    
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 11px 25px;
+    color:royalblue;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbutton a{
+    color: royalblue;
+    
+}
+
+.dropdown-box{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 15px;
+    margin-left: -50px;
+    text-align: center;
+    
+}
+
+/* This turns the drop down off when not used */
+.navbutton:hover .dropdown-box{
+    display: block;
+    
+}
+
+.dropdown-box .navbutton{
+    width: 120px;
+    background-color: #fcfeff;
+   } 
+   
+
+nav a:hover{
+    color: #62c6d0;
+    transition: 0.1s;
+}
+
+.dropdown-box .navbutton a:hover{
+ 
+ color: white;
+} 
+
+.dropdown-box .navbutton:hover{
+    background-color: rgb(181, 219, 219);
+    color: rgb(0, 26, 144);
+    /* font-weight: bold; */
+}
+
+
+
+.portada-contenedor{
+    display: flex;
+    min-height: 300px;
+    padding-top: 110px;
+    /* background-color: pink; */
+    max-width: 2000px;
+    height:900px ;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portada{
+    background-image: url(images/otro-fondo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+}
+
+.encabezado-contenedor{ /*servicios*/
+    width: 100%;
+    min-height: 300px;
+    /* background-color: blueviolet; */
+    display: flex;
+    padding-top: 130px;
+    margin-bottom: 50px;
+    
+}
+
+.encabezado-contenedor a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .apartado{
+    background-color: chartreuse;
+    min-height: 100px;
+} */
+
+.encabezado{ /*servicios*/   
+    background-color: #2f3035;
+    background-image: url(images/tita.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50px;
+    width: 100%; 
+    display: flex;
+}
+
+.servicios{
+    margin: auto;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    word-spacing: normal;
+    color:rgb(238, 238, 238);
+    background-color: rgba(15, 15, 15, 0.342);
+    padding: 50px 100px;
+    font-weight: bold;
+
+}
+
+.pro{
+    /* color: rgb(31, 188, 209); */
+}
+
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1024px;  
+    /* background-color: blueviolet; */
+    min-height: 300px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.presentacion{
+   margin-bottom: 50px;
+   width: 100%;
+   /* margin-left: auto;
+   margin-right: auto; */
+}
+
+.textoRepse{
+    display: flex;
+    max-width: 1024px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textoRepse p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.unsang{
+    width: 100%;
+    margin-bottom: -50px;
+    /* padding: 0; */
+    text-align: left;
+    /* background-color: aquamarine; */
+
+}
+
+.sang{
+    margin-left: 10px;
+}
+
+.encabezado-repse{
+    max-width: 1024px;
+    margin-bottom: 15px;
+}
+
+.encabezado-repse p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.5rem;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+.repse{
+    max-width: 300px; 
+    border: 2px solid rgb(93, 89, 89); 
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.bold_repse{
+    font-weight: bold;
+}
+
+.bold_repsesang{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.certificacion{
+    padding: 0;
+    background-color: wheat;
+    font-weight: bold;
+}
+
+.presentacion ul{
+    margin: 0 auto;
+    background-color: rgb(251, 250, 233);
+    /* width: 1024px; */
+    list-style-position: inside;
+    list-style-type: disc;
+    line-height: 2rem;
+    padding: 20px 30px;
+}
+.may{
+    line-height: 3rem;
+}
+
+ul span{
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: royalblue;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.4rem;
+    padding-top: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.cards-sector{
+    display: flex;
+    width: 100%;
+    /* background-color: burlywood; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.cards-sector p{
+    background-color: rgba(2, 2, 19, 0.404);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    line-height: 0;
+    line-height: 10px;
+    padding: 0;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+
+.card1{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/empresarial.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+}
+
+.card2{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/hospitalario.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+}
+
+.card3{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/escolar.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+}
+
+.card4{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/residencial.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+}
+
+.card5{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/auto.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+}
+
+.card6{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(images/electrodomesticos.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+    margin-bottom:30px;
+  
+}
+
+
+.card-image{
+    width: 100%;
+}
+
+.card i{
+    font-size: 100px;
+    color: black;
+    
+}
+
+
+/* .map{
+   padding-bottom: 50px;
+} */
+
+.slider{
+
+    width: 350px;
+    height: 200px;
+    position: relative;
+
+}
+
+.container-contacto h1{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container-contacto{
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(27, 54, 54);
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+    /* min-height: 350px; */
+}
+
+.tarjeta{
+    width: 48%;
+    min-height: 400px;
+    background-color: rgb(244, 245, 224);
+}
+
+.tarjeta p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.tarjeta i{
+    margin-right: 10px;
+}
+
+.redes{
+    margin: 0;
+    padding: 0;
+}
+
+.desc{
+    font-weight: bold;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(43, 49, 49);
+    float: inline-end;
+    padding: 25px 0;
+    
+}
+
+.footer-content{
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100px;
+}
+
+.encabezado-footer{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    min-height: 10px;
+    max-height: 50px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content P{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0;
+    
+}
+
+.footer-content i{
+    text-align: right;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0;
+}
+
+.social{
+    max-width: 154px;
+    /* width: 154px; */
+    padding-top: 10px;
+    /* background-color: aquamarine; */
+}
+
+.contenido-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    padding-top: 50px;
+    /* background-color: aquamarine; */
+}
+
+.card-footer1, .card-footer2, .card-footer3{
+    width: 32%;
+    min-height: 50px;
+    padding-top: 20px;
+}
+
+.card-footer1 p, .card-footer2 p, .card-footer3 p{
+    font-size: 1rem;
+    /* margin: 0px 0px 0px 0px; */
+    /* padding: 0px 0px 0px 0px; */
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+.card-footer1 i, .card-footer2 i, .card-footer3 i{
+    margin: 0;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.card-footer2 p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-footer3 p{
+    width: 100%;
+    text-align: right;
+}
+
+.card-footer3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navegador-footer{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.disclaimer p{
+    font-size: .9rem;
+    font-weight: normal;
+    /* display: inline-block; */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-right: 30px;
+    /* flex-wrap: nowrap; */
+    display: inline-block;
+    /* margin: 0 auto; */
+}
+
+
+
+.sainn{
+    color: mediumturquoise;
+    font-weight: bold;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* Tablet view */
+@media (max-width: 768px){
+    nav{
+        display: none;
+    }
+
+    .burguermenu{
+        margin-left: 10px;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    .mob-wrapper{
+        display: block;
+        /* padding-right: 30px; */
+    }
+
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    /* nav a{
+        display: block;
+    } */
+    .navbutton{
+    display: block;
+    background-color: rgb(80, 133, 255); 
+    padding: 15px 15px;
+    margin-left: -70px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    }
+    .navbutton a{
+        color: white;
+    }
+
+    .logo{
+        /* margin-left: 30px; */
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        width: 45%;
+    }
+
+    .portada-contenedor{
+        height: 500px;
+    }
+
+    .show-desktop{
+        display: none;
+    }
+
+    .card-footer3{
+        /* text-align: center; */
+        /* background-color: aquamarine; */
+        /* width: 40%; */
+        margin: 0 auto;
+        padding: 0;
+        /* margin: 0; */
+    }
+
+    .card-footer3 p{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
+
+    .contenido-footer{
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .disclaimer .show-desktop{
+        display: none;
+    }
+
+    .disclaimer{
+        margin-top: 10px;
+    }
+
+    .disclaimer p{
+        margin: 0;
+    }
+
+    .social{
+        margin-right: 10px;
+    }
+
+    .encabezado-footer p{
+        margin-left: 10px;
+    }
+
+    .container-contacto{
+        display: block;
+    }
+    .tarjeta{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5px;
+        min-height: 10px;
+    }
+    iframe{
+        min-height: 200px;
+    }
+
+    .servicios{
+        /* margin: 0 auto; */
+        text-align: center;
+        padding: 0;
+        padding: 50px 0;
+    }
+    .servicios p{
+        /* margin: auto; */
+        /* text-align: center;
+        padding: 0;
+        margin: 0; */
+    }
+
+
+
+}
+
+
+/* Mobile view */
+@media (max-width: 400px){
+    /* .burguermenu{
+        margin-right: 10px;
+    } */
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+
+    .portada-contenedor{
+        height: 300px;
+    }
+
+    .navbutton{
+        /* margin: 0; */
+        /* margin-right: 500px; */
+    }
+}
